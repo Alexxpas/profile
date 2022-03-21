@@ -1,0 +1,27 @@
+form {
+    width: 50%;
+    margin: auto;
+}
+
+form input::selection {
+    background-color: rgb(51, 148, 228);
+}
+
+form input,
+form button {
+    margin-top: 1em;
+}
+
+form input.text-area {
+    height: 6em;
+}
+
+form input:nth-of-type(1) {
+    margin-top: 3em;
+}
+
+.form h2 {
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+}
