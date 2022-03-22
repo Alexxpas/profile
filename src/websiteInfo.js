@@ -47,7 +47,7 @@ const websiteTileObject = {
             tags: [
                 "hair", "business"
             ],
-            url: "https://aikidonsw.org.au/?",
+            url: "https://aikidonsw.org.au/",
             image: "aikikai.png"
         },
         {
