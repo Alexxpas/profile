@@ -70,7 +70,11 @@ export const ContactPage = () => {
                         value={toSend.reply_to}
                         onChange={handleChange}
                     />
+<<<<<<< HEAD
                     <button type='submit'>Submit</button>
+=======
+                     <button type='submit'>Submit</button> 
+>>>>>>> 6a28d8b9b32e2944b423bf2ec6f555466e14b160
                 </form>
             </section >
         </div >
