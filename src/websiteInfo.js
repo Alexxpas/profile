@@ -48,7 +48,11 @@ const websiteTileObject = {
                 "hair", "business"
             ],
             url: "https://aikidonsw.org.au/",
+<<<<<<< HEAD
             image: "/media/aikikai.png"
+=======
+            image: "aikikai.png"
+>>>>>>> 5f512fd9eafea344d1cd2ed1abe9455754442f6d
         },
         {
             name: "Hair Funkd",
