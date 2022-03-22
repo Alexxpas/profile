@@ -39,7 +39,18 @@ const websiteTileObject = {
             ],
             url: "https://royalmedical.com.au/",
             image: "/media/royalmedicalscreenshot.png"
-        }, {
+        },
+        {
+            name: "Aiki Kai",
+            text: "Dojo",
+            image: "",
+            tags: [
+                "hair", "business"
+            ],
+            url: "https://aikidonsw.org.au/?",
+            image: "aikikai.png"
+        },
+        {
             name: "Hair Funkd",
             text: "Salon",
             image: "",
