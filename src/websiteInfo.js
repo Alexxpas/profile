@@ -47,8 +47,8 @@ const websiteTileObject = {
             tags: [
                 "hair", "business"
             ],
-            url: "https://aikidonsw.org.au/?",
-            image: "aikikai.png"
+            url: "https://aikidonsw.org.au/",
+            image: "/media/aikikai.png"
         },
         {
             name: "Hair Funkd",
