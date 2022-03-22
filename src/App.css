@@ -56,4 +56,13 @@ figure {
     nav {
         overflow-x: auto;
     }
+
+    .gridWrap {
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+
+    [class*="gridItem"] {
+        width: unset;
+    }
 }
