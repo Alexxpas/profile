@@ -12,7 +12,7 @@ const websiteTileObject = {
         },
         {
             name: "Red Tree",
-            text: "Psychological Practice",
+            text: "Psychiatric Health Practice",
             image: "",
             tags: [
                 "business", "medicine"
