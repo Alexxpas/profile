@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { Switch, Route, Redirect, NavLink } from "react-router-dom";
+// import React, { useState } from "react";
+import React from "react";
+import { Switch, Route, Redirect, NavLink, useLocation } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage";
-import { ContactsPage } from "./containers/contactsPage/ContactsPage";
+// import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage";
+// import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 import { ContactPage } from "./containers/contactPage/ContactPage";
 import { MeditationPage } from "./containers/meditationPage/MeditationPage";
 import { ProfilePage } from "./containers/profilePage/ProfilePage";
@@ -11,13 +13,10 @@ import { HomePage } from "./containers/homePage/HomePage";
 import "./App.css";
 
 function App() {
-  /*
-  Define state variables for 
-  contacts and appointments 
-  */
+  let location = useLocation();
 
-  const [contacts, setContacts] = useState([]);
-  const [appointments, setAppointments] = useState([]);
+  // const [contacts, setContacts] = useState([]);
+  // const [appointments, setAppointments] = useState([]);
 
   const ROUTES = {
     HOME: "/home",
@@ -34,17 +33,17 @@ function App() {
   contacts and appointments
   */
 
-  const addContact = (name, phone, email) => {
-    setContacts((prev) => [...prev, { name, phone, email }]
-    );
-  }
+  // const addContact = (name, phone, email) => {
+  //   setContacts((prev) => [...prev, { name, phone, email }]
+  //   );
+  // }
 
-  const addAppointment = (title, contact, date, time) => {
-    setAppointments((prev) =>
-      [...prev, { title, contact, date, time }]
-    );
+  // const addAppointment = (title, contact, date, time) => {
+  //   setAppointments((prev) =>
+  //     [...prev, { title, contact, date, time }]
+  //   );
 
-  }
+  // }
 
 
 
@@ -73,46 +72,56 @@ function App() {
         </NavLink> */}
       </nav>
       <main>
-        <Switch>
+        <TransitionGroup>
+          <CSSTransition
+            key={location.pathname}
+            classNames="fade"
+            timeout={300}
+          >
 
-          {/* Home redirect */}
-          <Route exact path="/">
-            <Redirect to={ROUTES.HOME} />
-          </Route>
+            <Switch location={location}>
 
-          {/* HOME SECTION *************/}
-          <Route path={ROUTES.HOME}>
-            <HomePage />
-          </Route>
+              {/* Home redirect */}
+              <Route exact path="/">
+                <Redirect to={ROUTES.HOME} />
+              </Route>
 
-          {/* PROFILE SECTION *************/}
-          <Route path={ROUTES.PROFILE}>
-            <ProfilePage />
-          </Route>
+              {/* HOME SECTION *************/}
+              <Route path={ROUTES.HOME}>
+                <HomePage />
+              </Route>
 
-          <Route path={ROUTES.CONTACT}>
-            <ContactPage />
-          </Route>
+              {/* PROFILE SECTION *************/}
+              <Route path={ROUTES.PROFILE}>
+                <ProfilePage />
+              </Route>
 
+              <Route path={ROUTES.CONTACT}>
+                <ContactPage />
+              </Route>
 
-          {/* CONTACTS SECTION *************/}
-          <Route path={ROUTES.CONTACTS}>
-            <ContactsPage addContact={addContact}
-              contacts={contacts} />
-          </Route>
+              {/* MEDITATION SECTION *************/}
+              <Route path={ROUTES.MEDITATION}>
+                <MeditationPage />
+              </Route>
 
-          {/* APPOINTMENTS SECTION *************/}
-          <Route path={ROUTES.APPOINTMENTS}>
-            <AppointmentsPage addAppointment={addAppointment}
-              appointments={appointments}
-              contacts={contacts} />
-          </Route>
+              {/* CONTACTS SECTION *************/}
+              {/* <Route path={ROUTES.CONTACTS}>
+                <ContactsPage addContact={addContact}
+                  contacts={contacts} />
+              </Route> */}
 
-          {/* MEDITATION SECTION *************/}
-          <Route path={ROUTES.MEDITATION}>
-            <MeditationPage />
-          </Route>
-        </Switch>
+              {/* APPOINTMENTS SECTION *************/}
+              {/* <Route path={ROUTES.APPOINTMENTS}>
+                <AppointmentsPage addAppointment={addAppointment}
+                  appointments={appointments}
+                  contacts={contacts} />
+              </Route> */}
+
+            </Switch>
+
+          </CSSTransition>
+        </TransitionGroup>
       </main>
     </>
   );

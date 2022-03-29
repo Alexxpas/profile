@@ -42,6 +42,55 @@ figure {
     margin: 0;
 }
 
+body {
+    overflow-y: hidden;
+}
+
+/* CSS Transitions */
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter-active {
+    opacity: .5;
+    transition: opacity 300ms;
+}
+
+.fade-enter-done {
+    opacity: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-exit.fade-exit-active {
+    transition: all 0s;
+}
+
+/* .fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: .5;
+    transition: opacity 300ms;
+} */
+
+.fade-exit {
+    opacity: 0;
+}
+
+.fade-exit-done {
+    opacity: 0;
+}
+
+/* CSS Transitions Finish */
+
+
 @media only screen and (max-width: 840px) {
     body {
         margin: 0;
