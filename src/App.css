@@ -112,6 +112,6 @@ body {
     }
 
     [class*="gridItem"] {
-        width: unset;
+        width: 100%;
     }
 }
