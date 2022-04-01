@@ -34,5 +34,119 @@
 
 .gridItem1 p {
     margin: 1em 0;
+}
 
+span.horizontal-line1 {
+    border-bottom: 1px solid white;
+    width: 408px;
+    height: 1px;
+    position: absolute;
+    bottom: 63px;
+    left: 9px;
+}
+
+.horizontal-line2 {
+    border-bottom: 1px solid white;
+    width: 493px;
+    height: 1px;
+    position: absolute;
+    bottom: 45px;
+    left: -17px;
+}
+
+.horizontal-line3 {
+    border-bottom: 1px solid white;
+    width: 569px;
+    height: 1px;
+    position: absolute;
+    bottom: 25px;
+    left: -41px;
+}
+
+span.vertical-line1 {
+    border-left: 1px solid white;
+    height: 79px;
+    position: absolute;
+    bottom: 1px;
+    left: 4px;
+    transform: rotate(53deg);
+}
+
+span.vertical-line2 {
+    border-left: 1px solid white;
+    height: 68px;
+    position: absolute;
+    bottom: 0px;
+    left: 67px;
+    transform: rotate(32deg);
+}
+
+span.vertical-line3 {
+    border-left: 1px solid white;
+    height: 70px;
+    position: absolute;
+    bottom: -6px;
+    left: 142px;
+    transform: rotate(0deg);
+}
+
+span.vertical-line4 {
+    border-left: 1px solid white;
+    height: 76px;
+    position: absolute;
+    bottom: -6px;
+    left: 226px;
+    transform: rotate(-32deg);
+}
+
+span.vertical-line5 {
+    border-left: 1px solid white;
+    height: 84px;
+    position: absolute;
+    bottom: -3px;
+    left: 306px;
+    transform: rotate(-53deg);
+}
+
+span.vertical-line6 {
+    border-left: 1px solid white;
+    height: 104px;
+    position: absolute;
+    bottom: -10px;
+    left: 414px;
+    transform: rotate(-66deg);
+}
+/* .sunset-svg {} */
+
+.sunset-fade-enter {
+    opacity: 0;
+}
+
+.sunset-fade-enter-active {
+    opacity: 1;
+    transition: opacity 12s, animation 4s;
+    animation-name: rising-sun;
+    animation-duration: 4s;
+}
+
+.sunset-fade-exit {
+    opacity: 1;
+}
+
+.sunset-fade-exit-active {
+    opacity: 0;
+    transition: opacity 4s, transform 1s;
+}
+
+.sunset-fade-exit-done{
+    opacity: 0;
+}
+
+@keyframes rising-sun {
+        from {
+            transform: translateY(200px)
+        }
+        to {
+            transform: translateY(0px);
+        }
 }

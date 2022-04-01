@@ -3,7 +3,6 @@ const websiteTileObject = {
         {
             name: "Scoundrel",
             text: "Film Production",
-            image: "",
             tags: [
                 "film", "art", "business"
             ],
@@ -13,7 +12,6 @@ const websiteTileObject = {
         {
             name: "Red Tree",
             text: "Psychiatric Health Practice",
-            image: "",
             tags: [
                 "business", "medicine"
             ],
@@ -23,7 +21,6 @@ const websiteTileObject = {
         {
             name: "Cure Cafe",
             text: "Cafe",
-            image: "",
             tags: [
                 "coffee", "art", "business"
             ],
@@ -33,7 +30,6 @@ const websiteTileObject = {
         {
             name: "Royal Medical",
             text: "Pharmaceutical",
-            image: "",
             tags: [
                 "pharmaceutical", "medical", "business"
             ],
@@ -43,7 +39,6 @@ const websiteTileObject = {
         {
             name: "Aiki Kai",
             text: "Dojo",
-            image: "",
             tags: [
                 "hair", "business"
             ],
@@ -53,7 +48,6 @@ const websiteTileObject = {
         {
             name: "Hair Funkd",
             text: "Salon",
-            image: "",
             tags: [
                 "hair", "business"
             ],

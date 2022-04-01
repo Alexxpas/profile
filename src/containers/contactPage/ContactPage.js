@@ -73,6 +73,7 @@ export const ContactPage = () => {
                     <button type='submit'>Submit</button>
                 </form>
             </section >
+
         </div >
     );
 };

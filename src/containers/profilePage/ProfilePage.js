@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
 import websiteTileObject from '../../websiteInfo.js';
 
 import "./profilePage.css";
@@ -56,10 +57,10 @@ export class ProfilePage extends React.Component {
                     <div className="websiteTileWrap">
                         {websiteTileObject.data.map(site => {
                             return (
-                                <a href={site.url} target="_blank" className="websiteTile">
+                                <a href={site.url} target="_blank" rel="noreferrer" className="websiteTile">
                                     <h3>{site.name}</h3>
                                     <p>{site.text}</p>
-                                    <img src={process.env.PUBLIC_URL + site.image} />
+                                    <img src={process.env.PUBLIC_URL + site.image} alt={site.name} />
                                 </a>
                             )
                         })}
