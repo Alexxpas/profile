@@ -11,6 +11,10 @@
     position: relative;
 }
 
+.gridItem3 {
+    width: 100%;
+}
+
 /* [class*="gridItem"]:nth-of-type(2) {
     background-color: blue;
 } */
@@ -149,4 +153,181 @@ span.vertical-line6 {
         to {
             transform: translateY(0px);
         }
+}
+
+/* Motorbike go broom broom */
+
+.motorcycle-wrap{
+    position: absolute;
+    bottom: 0;
+}
+
+.motorcycle-wrap svg{
+    width: 100px;
+    height: 100px;
+    transform: translateX(-200px)
+}
+
+.motorcycle-ride-enter {
+    opacity: 1;
+}
+
+.motorcycle-ride-enter-active {
+    opacity: 1;
+    transition: animation 4s;
+    animation-name: ride-right;
+    animation-duration: 6s;
+    animation-delay: 4s;
+}
+
+.motorcycle-ride-enter-done{
+    opacity: 1;
+    transform: translateX(89vw);
+}
+
+.motorcycle-ride-exit {
+    opacity: 1;
+    transform: translateX(89vw);
+}
+
+.motorcycle-ride-exit-active {
+    opacity: 1;
+    transition: transform 1s;
+}
+
+.motorcycle-ride-exit-done{
+    transform: translateX(89vw);
+}
+
+@keyframes ride-right {
+        from {
+            transform: translateX(-10vw)
+        }
+        to {
+            transform: translateX(89vw);
+        }
+}
+
+/* Streetlights*/
+
+.streetlight-wrap{
+    position: absolute;
+    bottom: 80px;
+}
+
+.streetlight-wrap-1 {
+    width: 100px;
+    height: 88px;
+    left: 35vw;
+}
+
+.streetlight-wrap-2 {
+    width: 100px;
+    height: 88px;
+    left: 55vw;
+}
+
+.streetlight-wrap-3 {
+    width: 100px;
+    height: 88px;
+    left: 75vw;
+}
+
+.streetlight-wrap svg{
+    width: 100px;
+    height: 88px;
+}
+
+
+/* 1st Light-------------------------------------------------------- */
+.streetlight-1-enter {
+    opacity: 0;
+}
+
+.streetlight-1-enter-active {
+    opacity: 0;
+    transition: animation;
+    animation-name: streetlight-appear;
+    animation-duration: 7s;
+    animation-delay: 5s;
+}
+
+.streetlight-1-enter-done{
+    opacity: 1;
+}
+
+.streetlight-1-exit {
+    opacity: 1;
+}
+
+.streetlight-1-exit-active {
+    opacity: 1;
+}
+
+.streetlight-1-exit-done{
+}
+
+/* 2nd Light-------------------------------------------------------- */
+.streetlight-2-enter {
+    opacity: 0;
+}
+
+.streetlight-2-enter-active {
+    opacity: 0;
+    transition: animation;
+    animation-name: streetlight-appear;
+    animation-duration: 6s;
+    animation-delay: 6s;
+}
+
+.streetlight-2-enter-done{
+    opacity: 1;
+}
+
+.streetlight-2-exit {
+    opacity: 1;
+}
+
+.streetlight-2-exit-active {
+    opacity: 1;
+}
+
+.streetlight-2-exit-done{
+}
+
+/* 3rd Light-------------------------------------------------------- */
+.streetlight-3-enter {
+    opacity: 0;
+}
+
+.streetlight-3-enter-active {
+    opacity: 0;
+    transition: animation;
+    animation-name: streetlight-appear;
+    animation-duration: 4.5s;
+    animation-delay: 7.5s;
+}
+
+.streetlight-3-enter-done{
+    opacity: 1;
+}
+
+.streetlight-3-exit {
+    opacity: 1;
+}
+
+.streetlight-3-exit-active {
+    opacity: 1;
+}
+
+.streetlight-3-exit-done{
+}
+
+@keyframes streetlight-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
