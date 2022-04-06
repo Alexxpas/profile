@@ -53,7 +53,7 @@ export class ProfilePage extends React.Component {
         return (
             <div>
                 <section className="introduction">
-                    <h1>Funky Websites ;)</h1>
+                    <h1>Selected Websites</h1>
                     <div className="websiteTileWrap">
                         {websiteTileObject.data.map(site => {
                             return (

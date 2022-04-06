@@ -37,6 +37,15 @@ const websiteTileObject = {
             image: "/media/royalmedicalscreenshot.png"
         },
         {
+            name: "PhotoPlay",
+            text: "Film",
+            tags: [
+                "film", "business"
+            ],
+            url: "https://www.photoplay.co/",
+            image: "/media/photoplay.png"
+        },
+        {
             name: "Aiki Kai",
             text: "Dojo",
             tags: [
