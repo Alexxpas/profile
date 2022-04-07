@@ -25,3 +25,14 @@ form input:nth-of-type(1) {
     text-align: center;
     margin-top: 2em;
 }
+
+form button{
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
