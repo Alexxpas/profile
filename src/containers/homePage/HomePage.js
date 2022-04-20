@@ -20,8 +20,7 @@ export const HomePage = () => {
                 <section className="gridItem1">
                     {/* <h1 onClick={() => setShowMessage(true)} >Hi there</h1> */}
                     <h1>Hi there</h1>
-                    <h2>Feel free to roam around, I am working on getting some fun stuff up</h2>
-                    <p>:)</p>
+                    <h2>Feel free to roam around :) </h2>
                     {/* <p onClick={() => setShowMessage(false)} >Are you hiring? Check out my <a href="./profile">profile</a> page</p> */}
                     <p>Are you hiring? Check out my <a href="./profile">profile</a> page</p>
                 </section>
