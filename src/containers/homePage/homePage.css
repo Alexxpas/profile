@@ -185,6 +185,16 @@ span.vertical-line6 {
     transform: translateX(89vw);
 }
 
+@media only screen and (max-width: 840px){
+    .motorcycle-ride-enter-done{
+        opacity: 1;
+        transform: translateX(61vw);
+    }
+    .motorcycle-wrap svg{
+        transform: none;
+    }
+}
+
 .motorcycle-ride-exit {
     opacity: 1;
     transform: translateX(89vw);

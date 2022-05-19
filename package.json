@@ -1,5 +1,6 @@
 {
-  "name": "react-challenge",
+  "name": "areks_profile",
+  "homepage": "http://areks.com.au",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

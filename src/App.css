@@ -114,4 +114,19 @@ body {
     [class*="gridItem"] {
         width: 100%;
     }
+    .gridItem2{
+        display: none;
+    }
+
+    .gridItem3 .streetlight-wrap{
+        display: none;
+    }
+
+    .gridItem3 [class*="horizontal-line1"]{
+        width: 388px;
+    }
+    span.vertical-line6{
+        display: none;
+    }
+
 }
